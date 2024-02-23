@@ -1,0 +1,129 @@
+.bigBox{
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.rectangle {
+    width: 100%;
+    height: 14.3%;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header {
+        font-family: var(--impt-text-font);
+        color: var(--dark-blue);
+        font-size: 12vw;
+    }
+    .description {
+        width:fit-content;
+
+        div {
+            font-family: var(--code-text-font);
+            color: var(--dark-blue);
+            font-size: 5vw;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid grey; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+              typing 1s steps(40, end),
+              blink-caret .75s step-end infinite;
+
+        }
+        
+    }
+
+    button {
+        background-color: var(--brown);
+        border: none;
+        width: 40%;
+        height: 60%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-family: var(--normal-text-font);
+            color: var(--white);
+            font-size: 4vw;
+        }
+
+        img {
+            margin-left: 15px;
+            width: 12%;
+        }
+    }
+
+    button:hover {
+        background-color: var(--bach);
+    }
+}
+
+.swipeLeft {
+    animation: swipeLeft 1s forwards;
+}
+
+.swipeRight {
+    animation: swipeRight 1s forwards;
+}
+
+@media screen and (min-width: 500px) {
+    .rectangle {
+        .header {
+            font-size: 70px;
+        }
+        .description {
+            div {
+                font-size: 48px;
+            }
+        }
+        button {
+            width: 252px;
+            height: 79px;
+
+            span {
+                font-size: 22px;
+            }
+
+            .img {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes swipeRight {
+    100% {
+        transform: translateX(100%);
+        opacity: 0.25;
+    }
+}
+
+@keyframes swipeLeft {
+    100% {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: grey; }
+  }
