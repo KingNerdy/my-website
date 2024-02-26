@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font weight: 400 */
+@font-face {
+  font-family: "Lekton-Italic";
+  src: url("./styles/Lekton-Italic.ttf");
+}
+/* font weight: 900 */
+@font-face {
+  font-family: "Lekend-Black";
+  src: url("./styles/Lexend-Black.ttf");
+}
+/* font weight: 400 */
+@font-face {
+  font-family: "Lekend-Regular";
+  src: url("./styles/Lexend-Regular.ttf");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --light-blue: #8FEBF1;
-  --dark-blue: #2C238D;
-  --brown: #843C1D;
-  --white: #FFFFFF;
-  --bach: #ED916A;
+  --light-blue: #8febf1;
+  --dark-blue: #2c238d;
+  --brown: #843c1d;
+  --white: #ffffff;
+  --bach: #ed916a;
+  --impt-text-font: "Lekend-Black";
+  --normal-text-font: "Lekend-Regular";
+  --code-text-font: "Lekton-Italic";
 }
 
 @media (prefers-color-scheme: dark) {
