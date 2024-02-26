@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="w-screen bg-bgGrey pt-10 flex flex-row justify-around items-end text-textOlive font-sans text-3xl font-semibold fixed">
+    <div className="w-screen bg-bgGrey pt-7 sm:pt-10 px-5 sm:px-auto flex flex-row justify-around items-end text-textOlive font-sans sm:text-3xl text-xl font-semibold fixed">
       <Link className={`hover:text-textPink`} href="/Home">
         Home
       </Link>
