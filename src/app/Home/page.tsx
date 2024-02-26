@@ -68,10 +68,10 @@ const Home = () => {
     fetchData();
   }, []);
   return (
-    <div className="bg-bgGrey ">
+    <div className="h-screen overflow-scroll bg-bgGrey snap-y snap-mandatory">
       <Header />
       {/* first text box */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose">
+      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose snap-start">
         <p>
           Hi there, I am Ernest Tan. I feel that a lot of us people are too
           caught up with life.
@@ -86,7 +86,7 @@ const Home = () => {
         </p>
       </div>
       {/* Second text box */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose">
+      <div className=" h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose snap-center">
         <p>
           I have personally picked quotes for you and you only. (Refresh for
           more!)
@@ -94,22 +94,22 @@ const Home = () => {
         <p>Scroll slowly...</p>
       </div>
       {/* Quote 1 */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[30%] font-normal text-textLightBlue tracking-wide leading-loose">
+      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[30%] font-normal text-textLightBlue tracking-wide leading-loose snap-center">
         <p>{quotes[0].quote}</p>
         <p className="text-right">{`~${quotes[0].author}`}</p>
       </div>
       {/* Quote 2 */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[30%] font-normal text-textOrange tracking-wide leading-loose">
+      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[30%] font-normal text-textOrange tracking-wide leading-loose snap-center">
         <p>{quotes[1].quote}</p>
         <p className="text-right">{`~${quotes[1].author}`}</p>
       </div>
       {/* Quote 3 */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[25%] font-normal text-textPink tracking-wide leading-loose">
+      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[25%] font-normal text-textPink tracking-wide leading-loose snap-center">
         <p>{quotes[2].quote}</p>
         <p className="text-right">{`~${quotes[2].author}`}</p>
       </div>
       {/* Carpe Diem page */}
-      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[25%]font-normal text-textDarkBlue tracking-wide gap-5 leading-loose">
+      <div className="h-screen text-center flex flex-col justify-center font-serif text-2xl p-[20%] px-[25%]font-normal text-textDarkBlue tracking-wide gap-5 leading-loose snap-center">
         <p>Remember:</p>
         <p className="font-semibold text-8xl">CARPE DIEM</p>
         <p className="text-textBlack">

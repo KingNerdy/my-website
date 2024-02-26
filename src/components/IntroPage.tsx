@@ -16,7 +16,11 @@ const IntroPage = ({ setShowIntroPage }: DefaultPageProps) => {
     setSwipe(true);
     setTimeout(() => {
       setShowIntroPage(false);
-    }, 800);
+    }, 400);
+    function enableScroll() {
+      document.body.style.overflow = "auto";
+    }
+    enableScroll();
   };
 
   return (
