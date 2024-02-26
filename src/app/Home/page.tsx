@@ -68,7 +68,7 @@ const Home = () => {
     fetchData();
   }, []);
   return (
-    <div className="h-screen overflow-y-scroll bg-bgGrey snap-y snap-mandatory">
+    <div className="h-screen overflow-y-scroll bg-bgGrey snap-y snap-mandatory scrollbar-none">
       <Header />
       {/* first text box */}
       <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose snap-start">
