@@ -73,47 +73,55 @@ const Home = () => {
       {/* first text box */}
       <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose snap-start">
         <p>
-          Hi there, I am Ernest Tan. I feel that a lot of us people are too
-          caught up with life.
+          Hi, I&apos;m Ernest Tan. Life can be overwhelming, and we often forget
+          to give ourselves a break.
         </p>
         <p>
-          Therefore, I have created this website for you: I hope that by sharing
-          snippets of the wonderful adventures I have had experienced so far, I
-          am able to remind you to{" "}
-          <span className="text-textLightBlue">slow down</span>,{" "}
-          <span className="text-textOrange">take a break </span> and
-          <span className="text-textPink"> enjoy </span> what is around you!
+          This website is here to remind you to
+          <span className="text-textLightBlue"> slow down</span>,{" "}
+          <span className="text-textOrange">take a breath</span>, and
+          <span className="text-textPink"> appreciate </span> the world around
+          you.
         </p>
       </div>
       {/* Second text box */}
+      <div className=" h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textBlack sm:gap-20 tracking-wide leading-loose snap-center">
+        <p>Explore daily quotes curated to inspire and uplift.</p>
+        <p className="mt-10 md:mt-auto">
+          {" "}
+          Here&#39;s a glimpse: &#34;Believe you can and you are halfway
+          there&#34;
+        </p>
+        <p className="text-right">-Theodore Roosevelt</p>
+      </div>
+      {/* Third text box */}
       <div className=" h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textBlack gap-20 tracking-wide leading-loose snap-center">
         <p>
-          I have personally picked quotes for you and you only. (Refresh for
-          more!)
+          Ready to be inspired? Scroll down for more or refresh for a new quote
+          every day.
         </p>
-        <p>Scroll slowly...</p>
       </div>
       {/* Quote 1 */}
-      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] sm:px-[30%] font-normal text-textLightBlue tracking-wide leading-loose snap-center">
+      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textLightBlue tracking-wide leading-loose snap-center">
         <p>{quotes[0].quote}</p>
         <p className="text-right">{`~${quotes[0].author}`}</p>
       </div>
       {/* Quote 2 */}
-      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] sm:px-[30%] font-normal text-textOrange tracking-wide leading-loose snap-center">
+      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textOrange tracking-wide leading-loose snap-center">
         <p>{quotes[1].quote}</p>
         <p className="text-right">{`~${quotes[1].author}`}</p>
       </div>
       {/* Quote 3 */}
-      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] sm:px-[30%%] font-normal text-textPink tracking-wide leading-loose snap-center">
+      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-lg sm:text-2xl p-[10%] sm:p-[20%] font-normal text-textPink tracking-wide leading-loose snap-center">
         <p>{quotes[2].quote}</p>
         <p className="text-right">{`~${quotes[2].author}`}</p>
       </div>
       {/* Carpe Diem page */}
-      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-xl sm:text-2xl p-[5%] sm:p-[20%] sm:px-[25%] font-normal text-textDarkBlue tracking-wide sm:gap-5 leading-loose snap-center">
-        <p>Remember:</p>
+      <div className="h-screen sm:h-auto text-center flex flex-col justify-center font-serif text-xl sm:text-2xl p-[5%] sm:p-[20%] sm:px-[25%] font-normal text-textDarkBlue tracking-wide gap-0 leading-loose snap-center">
+        <p>Sieze The Day</p>
         <p className="font-semibold text-5xl sm:text-8xl">CARPE DIEM</p>
-        <p className="text-textBlack text-base sm:text-2xl">
-          Enjoy yourself while you still have the chance
+        <p className="text-textBlack text-base sm:text-2xl mt-5">
+          Embrace the present moment and make the most of every opportunity.
         </p>
       </div>
       <Footer />
